@@ -13,6 +13,12 @@
 		50BC7755290988EC00C7D97B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50BC7753290988EC00C7D97B /* Main.storyboard */; };
 		50BC7757290988EE00C7D97B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50BC7756290988EE00C7D97B /* Assets.xcassets */; };
 		50BC775A290988EE00C7D97B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50BC7758290988EE00C7D97B /* LaunchScreen.storyboard */; };
+		50BC7762290989D100C7D97B /* GameStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50BC7761290989D100C7D97B /* GameStoryboard.storyboard */; };
+		50BC7765290989ED00C7D97B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC7764290989ED00C7D97B /* GameViewController.swift */; };
+		50BC776829098AF500C7D97B /* TableOfRecordsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50BC776729098AF500C7D97B /* TableOfRecordsStoryboard.storyboard */; };
+		50BC776A29098B0B00C7D97B /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC776929098B0B00C7D97B /* RecordsViewController.swift */; };
+		50BC776D29098B3200C7D97B /* SettingsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50BC776C29098B3200C7D97B /* SettingsStoryboard.storyboard */; };
+		50BC776F29098B4500C7D97B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC776E29098B4500C7D97B /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		50BC7756290988EE00C7D97B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50BC7759290988EE00C7D97B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50BC775B290988EE00C7D97B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50BC7761290989D100C7D97B /* GameStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameStoryboard.storyboard; sourceTree = "<group>"; };
+		50BC7764290989ED00C7D97B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		50BC776729098AF500C7D97B /* TableOfRecordsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableOfRecordsStoryboard.storyboard; sourceTree = "<group>"; };
+		50BC776929098B0B00C7D97B /* RecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
+		50BC776C29098B3200C7D97B /* SettingsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsStoryboard.storyboard; sourceTree = "<group>"; };
+		50BC776E29098B4500C7D97B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +71,42 @@
 				50BC774D290988EC00C7D97B /* AppDelegate.swift */,
 				50BC774F290988EC00C7D97B /* SceneDelegate.swift */,
 				50BC7751290988EC00C7D97B /* ViewController.swift */,
+				50BC776B29098B2200C7D97B /* Settings */,
+				50BC776629098A0600C7D97B /* Table of records */,
+				50BC7763290989D800C7D97B /* Game */,
 				50BC7753290988EC00C7D97B /* Main.storyboard */,
 				50BC7756290988EE00C7D97B /* Assets.xcassets */,
 				50BC7758290988EE00C7D97B /* LaunchScreen.storyboard */,
 				50BC775B290988EE00C7D97B /* Info.plist */,
 			);
 			path = ZombieRunner;
+			sourceTree = "<group>";
+		};
+		50BC7763290989D800C7D97B /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				50BC7761290989D100C7D97B /* GameStoryboard.storyboard */,
+				50BC7764290989ED00C7D97B /* GameViewController.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		50BC776629098A0600C7D97B /* Table of records */ = {
+			isa = PBXGroup;
+			children = (
+				50BC776729098AF500C7D97B /* TableOfRecordsStoryboard.storyboard */,
+				50BC776929098B0B00C7D97B /* RecordsViewController.swift */,
+			);
+			path = "Table of records";
+			sourceTree = "<group>";
+		};
+		50BC776B29098B2200C7D97B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				50BC776C29098B3200C7D97B /* SettingsStoryboard.storyboard */,
+				50BC776E29098B4500C7D97B /* SettingsViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +167,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50BC776D29098B3200C7D97B /* SettingsStoryboard.storyboard in Resources */,
 				50BC775A290988EE00C7D97B /* LaunchScreen.storyboard in Resources */,
+				50BC776829098AF500C7D97B /* TableOfRecordsStoryboard.storyboard in Resources */,
 				50BC7757290988EE00C7D97B /* Assets.xcassets in Resources */,
 				50BC7755290988EC00C7D97B /* Main.storyboard in Resources */,
+				50BC7762290989D100C7D97B /* GameStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50BC7765290989ED00C7D97B /* GameViewController.swift in Sources */,
 				50BC7752290988EC00C7D97B /* ViewController.swift in Sources */,
 				50BC774E290988EC00C7D97B /* AppDelegate.swift in Sources */,
 				50BC7750290988EC00C7D97B /* SceneDelegate.swift in Sources */,
+				50BC776A29098B0B00C7D97B /* RecordsViewController.swift in Sources */,
+				50BC776F29098B4500C7D97B /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +341,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +350,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Yauheni-Hraudzin.ZombieRunner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +372,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +381,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Yauheni-Hraudzin.ZombieRunner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

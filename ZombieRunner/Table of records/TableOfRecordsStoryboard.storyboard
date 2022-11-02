@@ -11,17 +11,48 @@
         <!--Records View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="RecordsViewController" customModule="ZombieRunner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecordsViewController" id="Y6W-OH-hqX" customClass="RecordsViewController" customModule="ZombieRunner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ery-vT-A7G">
+                                <rect key="frame" x="16.000000000000004" y="57" width="38.333333333333343" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="zyl-ZN-1dG"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.70001775030000002" green="0.25067448619999999" blue="0.2901859879" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="SQQ-ky-Gq6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Table of records" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDD-My-1D7">
+                                <rect key="frame" x="108.33333333333333" y="57" width="177.66666666666669" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="t3b-NQ-0wI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RDD-My-1D7" secondAttribute="trailing" constant="104" id="8j4-z5-vfa"/>
+                            <constraint firstItem="ery-vT-A7G" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="SOw-we-wWj"/>
+                            <constraint firstItem="RDD-My-1D7" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="p4x-GD-SDv"/>
+                            <constraint firstItem="RDD-My-1D7" firstAttribute="leading" secondItem="ery-vT-A7G" secondAttribute="trailing" constant="54" id="vWg-pn-4c6"/>
+                            <constraint firstItem="ery-vT-A7G" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="yzm-pT-9rP"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48" y="-2"/>
+            <point key="canvasLocation" x="47.692307692307693" y="-2.1327014218009479"/>
         </scene>
     </scenes>
     <resources>
